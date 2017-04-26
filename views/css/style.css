@@ -35,9 +35,26 @@ form {
   z-index: -1;
 }
 
-.randomPizzaContainer {
-  float: left;
+#randomPizzas {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.randomPizzaContainer {
+  display: flex;
+  min-height: 325px;
+}
+
+#randomPizzas.small .randomPizzaContainer {
+  flex: 25%;
+}
+
+#randomPizzas.medium .randomPizzaContainer {
+  flex: 33%;
+}
+
+#randomPizzas.large .randomPizzaContainer {
+  flex: 50%;
 }
 
 .randomPizzaContainer:after {
